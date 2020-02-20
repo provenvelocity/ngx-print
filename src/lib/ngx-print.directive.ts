@@ -122,7 +122,7 @@ public returnStyleValues() {
       links = this.getElementTag('link');
     }
 
-    printContents = document.getElementById(this.printSectionId).innerHTML;
+    printContents = this.getElementTag(this.printSectionId);
     popupWin = window.open("", "_blank", "top=0,left=0,height=auto,width=auto");
     popupWin.document.open();
     popupWin.document.write(`
